@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+         <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+        <ul>
+            <li class="logo"><a href="#">Logo</a></li>
+            <li class="hideOnMobile home"><a href="#">Home</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">About Us</a></li>
+            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+            <li class="side" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="left">
+            <h1>Revitlize your Clothes with Expert <span>Laundry Service!</span></h1>
+            <p>Experience the best laundry service with us. We offer quick and reliable laundry solutions for your convenience.😊</p>
+            <br>
+            <button class="btn2">Book a service today!</button>
+            <button class="btn1">Sign In</button>
+        </div>
+        <div class="right">
+            <img src="washing machin.png" alt="Laundry Service" width="400px">
+        </div>
+    </section>
+   <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
